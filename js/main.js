@@ -58,7 +58,3 @@ window.addEventListener('click', function(e) {
       }
   });
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  alert(1);
-});

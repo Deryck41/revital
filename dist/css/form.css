@@ -1,0 +1,1058 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #A0895F;
+          box-shadow: 0 0 1px #A0895F;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: #A0895F;
+}
+.progress .bar {
+  background-color: #FFF;
+  height: 100%;
+}
+.progress .bar[value="1"] {
+  width: 16.66%;
+}
+.progress .bar[value="2"] {
+  width: 33.33%;
+}
+.progress .bar[value="3"] {
+  width: 50%;
+}
+.progress .bar[value="4"] {
+  width: 66.66%;
+}
+.progress .bar[value="5"] {
+  width: 83.33%;
+}
+.progress .bar[value="6"] {
+  width: 100%;
+}
+
+.step-counter {
+  position: absolute;
+  right: 98px;
+  bottom: 100px;
+  color: #FFF;
+  font-family: "Abhaya Libre";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.step-counter .title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: right;
+}
+.step-counter .steps {
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+form.form {
+  width: 100%;
+  background-color: #000;
+}
+form.form .wrapper {
+  padding: 0;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+form.form .wrapper_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.form__current-item {
+  border-radius: 10px;
+  border: 1px solid #A0895F;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.form__ci-lcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  color: #FFF;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.form__ci-text {
+  font-family: "Red Hat Text";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.form__ci-title {
+  font-family: "Abhaya Libre";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.form__ci-price {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+}
+.form__ci-rcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 120px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.form__ci-rcol img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.button-end {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  flex: 1;
+}
+
+.form__wrapper {
+  border-radius: 10px;
+  background-color: #A0895F;
+  padding: 40px 40px 50px 40px;
+}
+.form__wrapper_multi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.form__inputs-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.form__inputs-group_multi {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #FFF;
+}
+
+.input-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.input-box_big {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 0px;
+          flex: 2 1 0;
+}
+.input-box_little {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5 1 0px;
+          flex: 0.5 1 0;
+}
+.input-box_horizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+.input-box_horizontal .form-checkbox {
+  margin-top: 4px;
+}
+.input-box[disabled] {
+  opacity: 0.4;
+}
+
+.form-input {
+  width: 100%;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.3019607843);
+  background-color: rgba(225, 225, 225, 0.2);
+  padding: 17px 15px;
+}
+.form-input::-webkit-input-placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  opacity: 0.6;
+}
+.form-input::-moz-placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  opacity: 0.6;
+}
+.form-input:-ms-input-placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  opacity: 0.6;
+}
+.form-input::-ms-input-placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  opacity: 0.6;
+}
+.form-input::placeholder {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+  opacity: 0.6;
+}
+.form-input_iconed {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position-x: 20px;
+  background-position-y: 50%;
+}
+.form-input_iconed.map {
+  background-image: url("../img/pointer-form.svg");
+}
+.form-input_iconed.mail {
+  background-image: url("../img/mail-form.svg");
+}
+.form-input_iconed.phone {
+  background-image: url("../img/Phone.svg");
+}
+
+.form__inputs-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.form__inputs-row .input-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #FFF;
+}
+
+.group-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.group-description__number {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.3019607843);
+}
+.group-description__text {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  content: "";
+  background-image: url("../img/calendar.svg");
+}
+
+.select-form {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.select-form::after {
+  display: block;
+  content: "";
+  justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+.select-form::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: #FFF;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  background-image: url("../img/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 20px);
+  padding-right: 20px;
+  background-position-y: 50%;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.button-form {
+  width: 250px;
+}
+
+.button-nex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.applicant-title {
+  font-family: "Abhaya Libre";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  color: #FFF;
+}
+
+.input-label {
+  max-height: 24px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.form-checkbox {
+  position: relative;
+  min-width: 18px;
+  height: 18px;
+}
+.form-checkbox .input {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  z-index: 9;
+  opacity: 0;
+}
+.form-checkbox .mark {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.form-checkbox .input:checked ~ .mark {
+  background-color: #FFF;
+}
+.form-checkbox .input:checked ~ .mark::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  top: calc(50% - 5px);
+  width: 5px;
+  height: 10px;
+  border: solid #A0895F;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #F5F5F5;
+}
+
+.file-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 20px 0 30px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 2px dashed #FFFFFF !important;
+  background-color: rgba(225, 225, 225, 0.2);
+}
+.file-input input {
+  display: none;
+}
+
+.add-applicant-button {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+form.form .wrapper_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.input-checklist-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.input-checklist-wrapper .lcol, .input-checklist-wrapper .rcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #A0895F;
+  -ms-flex-preferred-size: calc(50% - 20px);
+      flex-basis: calc(50% - 20px);
+  border-radius: 10px;
+  padding: 40px 40px 50px 40px;
+  gap: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.box-switch-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.box-switch-info .info-switch-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25.5px;
+  color: #FFF;
+}
+
+.switch-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.switch-group .switch-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.switch-group .switch-box .text-switch {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+}
+
+.sign-element {
+  padding: 40px 40px 50px 40px;
+  background-color: #A0895F;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.sign-number {
+  font-family: "Abhaya Libre";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.sign-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+}
+
+.sign-button {
+  position: relative;
+  cursor: pointer;
+}
+.sign-button .sign-content {
+  text-transform: uppercase;
+  background-color: #000;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 18px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s background-color ease;
+  transition: 0.2s background-color ease;
+}
+.sign-button input {
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sign-button input:checked ~ .sign-content {
+  background-color: #333;
+}
+
+.sign-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-text-sign {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-pay-text {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.pay-input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-input-wrapper {
+  padding: 40px;
+  background-color: #A0895F;
+}
+
+.pay__card-part {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.pay__card-part .input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+.pay__card-part .input-content .lcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.paypal-input {
+  position: relative;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Red Hat Text", sans-serif;
+  text-transform: uppercase;
+}
+.paypal-input::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 10px);
+  background-image: url("../img/paypal.svg");
+  width: 76px;
+  height: 20px;
+}
+
+.pay-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-box {
+  border: 1px solid #A0895F;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.current-item .item_img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.check-cart {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.cart__item {
+  color: #FFF;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-info {
+  width: 24vw;
+}
+.pay-info .checkbox-text {
+  margin-top: 20px;
+}
+
+.button-pay {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: calc(24vw - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.complete-wrapper {
+  background-color: #000;
+  padding: 120px 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 70px;
+}
+.complete-wrapper .top-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.complete-wrapper .top-line .rcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+  .form__ci-text {
+    font-size: 10.64px;
+  }
+  .form__ci-title {
+    font-size: 18px;
+  }
+  .form__ci-price {
+    font-size: 15px;
+  }
+  .form__ci-rcol {
+    min-width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .form__ci-rcol img {
+    width: 100%;
+  }
+  form.form .wrapper_first {
+    gap: 20px;
+  }
+  .form__inputs-row {
+    gap: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__inputs-row_mobile-split {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__inputs-row .form-input {
+    font-size: 15px;
+  }
+  .form__inputs-group {
+    gap: 15px;
+  }
+  .button-form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .step-counter {
+    right: 20px;
+    bottom: 40px;
+  }
+  .step-counter .steps {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .step-counter .title {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .input-box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .input-box_mobile-small {
+    -ms-flex-preferred-size: calc(50% - 7.5px);
+        flex-basis: calc(50% - 7.5px);
+  }
+  .input-checklist-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .switch-group .switch-box .text-switch {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .input-file-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .sign-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .checkbox-text-sign {
+    margin: 20px 0;
+  }
+  .pay-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pay__card-part {
+    padding-bottom: 20px;
+  }
+  .pay__card-part .rcol {
+    display: none;
+  }
+  .paypal-input {
+    margin-top: 20px;
+  }
+  .pay-info {
+    width: 100%;
+  }
+  .complete-wrapper {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .complete-wrapper .top-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .complete-wrapper .top-line .rcol {
+    text-align: center;
+  }
+  .button-pay {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-pay .text-left {
+    display: none;
+  }
+  .button-pay .text-right img {
+    display: none;
+  }
+}

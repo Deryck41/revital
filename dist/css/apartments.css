@@ -1,0 +1,200 @@
+.search-box_entry {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.locations-tabs {
+  margin: 0;
+}
+
+.locations_left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.filters-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 20px;
+}
+
+.filter-title {
+  font-family: "Red Hat Text", sans-serif;
+  color: #5A5A5A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.filters-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.filter-item_right {
+  margin-left: auto;
+}
+
+.price-input {
+  text-align: center;
+  background-color: #F5F5F5;
+  width: 74px;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+.price-input::-webkit-input-placeholder {
+  color: rgba(90, 90, 90, 0.5019607843);
+}
+.price-input::-moz-placeholder {
+  color: rgba(90, 90, 90, 0.5019607843);
+}
+.price-input:-ms-input-placeholder {
+  color: rgba(90, 90, 90, 0.5019607843);
+}
+.price-input::-ms-input-placeholder {
+  color: rgba(90, 90, 90, 0.5019607843);
+}
+.price-input::placeholder {
+  color: rgba(90, 90, 90, 0.5019607843);
+}
+
+.filter-select {
+  background-color: #F5F5F5;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+.filter-select option {
+  background-color: #A0895F;
+}
+
+.not-found {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin: 60px auto 164px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.not-found-text {
+  margin-top: 15px;
+  font-family: "Abhaya Libre";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.not-found__small-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27.2px;
+  color: #5A5A5A;
+}
+.not-found__image {
+  width: 40%;
+}
+
+.locations_right-column {
+  width: 35vw;
+}
+
+@media screen and (max-width: 1120px) {
+  .not-found {
+    width: 100%;
+    margin: 0;
+    padding: 80px calc(40px - 5.33vw);
+  }
+  .not-found-text {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .not-found__small-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .not-found__image {
+    width: 60%;
+  }
+  .tab-content {
+    margin-top: calc(60px + 40vw);
+  }
+  .locations .locations_right-column {
+    top: 290px;
+  }
+  .filters-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter-item {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .filter-select {
+    max-width: calc(44.66vw - 20px);
+  }
+  .search-box_entry {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .search-box_icon {
+    width: 24px;
+  }
+}
+.price-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}

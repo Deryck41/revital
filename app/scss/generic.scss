@@ -1,0 +1,75 @@
+@import "fonts.scss";
+.content .wrapper{
+    padding: 150px 375px;
+}
+
+.title-text{
+    font-size: 50px;
+    line-height: 55px;
+    font-family: 'Abhaya Libre';
+    font-weight: 800;
+    &_small{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    &_margin{
+        margin-top: 15px;
+    }
+}
+
+.text-container{
+    gap: 60px;
+}
+
+.content-block{
+    gap: 15px;
+}
+
+.content-block, .text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.generic-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    li{
+        background-image: url("../img/check-ul.svg");
+        background-repeat: no-repeat;
+        display: flex;
+        line-height: 30px;
+        padding-left: 30px;
+        background-position-y: center;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .content .wrapper{
+        padding: 40px 20px;
+    }
+    .text-container{
+        gap: 40px;
+    }
+    .content-block{
+        gap: 10px;
+    }
+
+    .title-text{
+        font-size: 35px;
+        line-height: 40px;
+        &_small{
+            font-size: 27px;
+            line-height: 30px;
+        }
+        &_margin{
+            margin-top: 20px;
+        }
+    }
+    .generic-list{
+        li{
+            background-position-y: 5px;
+        }
+    }
+}

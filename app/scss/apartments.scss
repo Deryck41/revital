@@ -1,0 +1,158 @@
+.search-box_entry{
+    flex: 1;
+}
+
+.locations-tabs{
+    margin: 0;
+}
+
+.locations_left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.filters-box{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.filter-title{
+    font-family: 'Red Hat Text', sans-serif;
+    color: #5A5A5A;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.filters-group{
+    display: flex;
+    gap: 20px;
+}
+
+.filter-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &_right{
+        margin-left: auto;
+    }
+}
+
+.price-input{
+    text-align: center;
+    background-color: #F5F5F5;
+    width: 74px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    &::placeholder{
+        color: #5A5A5A80;
+
+    }
+}
+
+.filter-select{
+    background-color: #F5F5F5;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    option{
+        background-color: #A0895F;
+    }
+}
+
+.not-found{
+    width: 800px;
+    display: flex;
+    gap: 5px;
+    margin: 60px auto 164px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &-text{
+        margin-top: 15px;
+        font-family: 'Abhaya Libre';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+
+    }
+    &__small-text{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 27.2px;
+        color: #5A5A5A;
+    }
+    &__image{
+        width: 40%;
+    }
+}
+.locations_right-column{
+    width: 35vw;
+}
+
+@media screen and (max-width: 1120px) {
+    .not-found{
+        width: 100%;
+        margin: 0;
+        padding: 80px calc(40px - 5.33vw);
+        &-text{
+            font-size: 27px;
+            line-height: 40px;
+        }
+        &__small-text{
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &__image{
+            width: 60%;
+        }
+    }
+    .tab-content{
+        margin-top: calc(60px + 40vw);
+    }
+
+    .locations .locations_right-column{
+        top: 290px;
+    }
+    .filters-box{
+        flex-wrap: wrap;
+    }
+    .filter-item{
+        flex-basis: calc(50% - 10px);
+    }
+    .filter-select{
+        max-width: calc(44.66vw - 20px);
+    }
+    .search-box_entry{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .search-box_icon{
+        width: 24px;
+    }
+}
+
+.price-group{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+}
